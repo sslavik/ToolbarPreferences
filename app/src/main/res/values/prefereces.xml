@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_account">Cuenta</string>
+    <string name="summary_account">Privacidad, seguridad, cambiar numero</string>
+    <string name="title_category_notification">Notificaciones</string>
+    <string name="summary_notification">Reproducir sonidos para los mensajes entrantes y salientes</string>
+    <string name="key_notification">notification</string>
+    <string name="title_notification">Tonos de conversacion</string>
+    <string name="key_user">user</string>
+    <string name="title_user">Usuario</string>
+    <string name="summary_user">Cambiar nombre de usuario</string>
+    <string name="key_password">password</string>
+    <string name="title_password">Password</string>
+    <string name="summary_password">Password introduced</string>
+</resources>
