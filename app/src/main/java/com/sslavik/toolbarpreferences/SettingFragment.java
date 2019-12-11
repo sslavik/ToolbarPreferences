@@ -4,6 +4,8 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.preference.PreferenceFragmentCompat;
 
@@ -20,10 +22,7 @@ import android.view.ViewGroup;
  */
 public class SettingFragment extends PreferenceFragmentCompat {
 
-
-    public SettingFragment() {
-        // Required empty public constructor
-    }
+    public static final String TAG = "settingFragment";
 
     public static SettingFragment newInstance(Bundle bundle) {
         SettingFragment fragment = new SettingFragment();
@@ -33,18 +32,8 @@ public class SettingFragment extends PreferenceFragmentCompat {
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        addPreferencesFromResource(R.xml.setting_preference);
+        setPreferencesFromResource(R.xml.setting_preference, rootKey);
     }
 
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-    }
 
 }

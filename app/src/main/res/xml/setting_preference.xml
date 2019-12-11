@@ -14,5 +14,13 @@
             android:summary="@string/summary_notification">
 
         </SwitchPreference>
+
+        <ListPreference
+            android:entries="@array/array_ringtones"
+            android:entryValues="@array/array_ringtones_values"
+            android:summary="@string/summary_ringtones"
+            android:key="@string/key_ringtone_notifications"
+            android:title="@string/title_ringtone_notifications"/>
+
     </PreferenceCategory>
 </PreferenceScreen>

@@ -12,4 +12,23 @@
     <string name="key_password">password</string>
     <string name="title_password">Password</string>
     <string name="summary_password">Password introduced</string>
+    <string name="summary_ringtones">Change notification ringtone</string>
+    <string name="key_ringtone_notifications">ringtone</string>
+    <string name="title_ringtone_notifications">Notification Ringtone</string>
+
+    <string-array name="array_ringtones" >
+        <item>Bell Ring</item>
+        <item>Achis Ring</item>
+        <item>Chiken Ring</item>
+        <item>Bull Ring</item>
+        <item>Summer Ring</item>
+    </string-array>
+    <string-array name="array_ringtones_values" >
+        <item>bell</item>
+        <item>achis</item>
+        <item>chiken</item>
+        <item>bull</item>
+        <item>summer</item>
+    </string-array>
+
 </resources>

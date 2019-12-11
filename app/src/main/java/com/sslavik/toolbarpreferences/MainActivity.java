@@ -3,6 +3,8 @@ package com.sslavik.toolbarpreferences;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
@@ -12,6 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    //CAMPOS
     Toolbar toolbar;
 
     @Override
@@ -22,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         // Sustituimos la Toolbar Actual por la que queremos enseñar
         toolbar = findViewById(R.id.toolbarMain);
         setSupportActionBar(toolbar);
-
     }
 
     @Override
@@ -54,10 +56,9 @@ public class MainActivity extends AppCompatActivity {
 
     // CARGA FRAGMENT DE PREFERENCIAS GENERALES
     private void showSettings() {
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.content, SettingFragment.newInstance(null));
-        transaction.addToBackStack(null);
-        transaction.commit();
-
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction().replace(R.id.content, new SettingFragment());
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 }
